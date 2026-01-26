@@ -21,6 +21,7 @@ python3 scripts/fetch_flower_images.py
 - `source`：来源站点（如 `zh.wikipedia`）
 
 脚本会为每次请求统一添加 `User-Agent` 请求头，若请求失败会输出失败的 URL，便于定位被拦截或不可达的链接。
+如果遇到 SSL 证书验证失败，脚本会自动降级为不校验证书的请求并继续抓取；如需禁用该降级，可使用 `--no-insecure-fallback`。
 
 ## 无网络或被限制环境（生成模板）
 

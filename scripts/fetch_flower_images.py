@@ -2,6 +2,7 @@
 import argparse
 import json
 import re
+import ssl
 import time
 import urllib.error
 import urllib.parse
@@ -11,6 +12,12 @@ from dataclasses import dataclass
 SOURCE_MD = "data/flowers.md"
 OUTPUT_JSON = "data/flowers.json"
 USER_AGENT = "FlowerImageFetcher/1.0 (+https://example.com)"
+DEFAULT_TIMEOUT = 15
+
+try:
+    import certifi
+except ImportError:  # pragma: no cover - optional dependency
+    certifi = None
 
 
 @dataclass
@@ -23,12 +30,40 @@ class FlowerRecord:
     source: str | None = None
 
 
-def fetch_json(url: str) -> dict:
+def build_ssl_contexts() -> tuple[ssl.SSLContext, ssl.SSLContext]:
+    if certifi:
+        verified_context = ssl.create_default_context(cafile=certifi.where())
+    else:
+        verified_context = ssl.create_default_context()
+    insecure_context = ssl._create_unverified_context()
+    return verified_context, insecure_context
+
+
+def is_cert_error(exc: BaseException) -> bool:
+    if isinstance(exc, ssl.SSLError):
+        return True
+    return "CERTIFICATE_VERIFY_FAILED" in str(exc)
+
+
+def fetch_json(
+    url: str,
+    context: ssl.SSLContext,
+    fallback_context: ssl.SSLContext,
+    allow_insecure_fallback: bool,
+) -> dict:
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     try:
-        with urllib.request.urlopen(request) as response:
+        with urllib.request.urlopen(request, context=context, timeout=DEFAULT_TIMEOUT) as response:
             return json.loads(response.read().decode("utf-8"))
-    except (urllib.error.URLError, TimeoutError) as exc:
+    except (urllib.error.URLError, TimeoutError, ssl.SSLError) as exc:
+        if allow_insecure_fallback and is_cert_error(exc):
+            print(f"SSL verification failed for {url}, retrying without verification.")
+            with urllib.request.urlopen(
+                request,
+                context=fallback_context,
+                timeout=DEFAULT_TIMEOUT,
+            ) as response:
+                return json.loads(response.read().decode("utf-8"))
         print(f"Request failed for {url}: {exc}")
         raise
 
@@ -38,7 +73,13 @@ def build_page_url(site: str, title: str) -> str:
     return f"https://{site}.org/wiki/{encoded}"
 
 
-def query_page_image(site: str, title: str) -> tuple[str | None, str | None]:
+def query_page_image(
+    site: str,
+    title: str,
+    context: ssl.SSLContext,
+    fallback_context: ssl.SSLContext,
+    allow_insecure_fallback: bool,
+) -> tuple[str | None, str | None]:
     params = {
         "action": "query",
         "prop": "pageimages",
@@ -47,7 +88,7 @@ def query_page_image(site: str, title: str) -> tuple[str | None, str | None]:
         "titles": title,
     }
     url = f"https://{site}.org/w/api.php?{urllib.parse.urlencode(params)}"
-    data = fetch_json(url)
+    data = fetch_json(url, context, fallback_context, allow_insecure_fallback)
     pages = data.get("query", {}).get("pages", {})
     for page in pages.values():
         thumbnail = page.get("thumbnail", {}).get("source")
@@ -56,7 +97,13 @@ def query_page_image(site: str, title: str) -> tuple[str | None, str | None]:
     return None, None
 
 
-def search_title(site: str, query: str) -> str | None:
+def search_title(
+    site: str,
+    query: str,
+    context: ssl.SSLContext,
+    fallback_context: ssl.SSLContext,
+    allow_insecure_fallback: bool,
+) -> str | None:
     params = {
         "action": "query",
         "list": "search",
@@ -65,28 +112,63 @@ def search_title(site: str, query: str) -> str | None:
         "srsearch": query,
     }
     url = f"https://{site}.org/w/api.php?{urllib.parse.urlencode(params)}"
-    data = fetch_json(url)
+    data = fetch_json(url, context, fallback_context, allow_insecure_fallback)
     results = data.get("query", {}).get("search", [])
     if results:
         return results[0]["title"]
     return None
 
 
-def resolve_image(name: str) -> tuple[str | None, str | None, str | None]:
-    image_url, page_url = query_page_image("zh.wikipedia", name)
+def resolve_image(
+    name: str,
+    context: ssl.SSLContext,
+    fallback_context: ssl.SSLContext,
+    allow_insecure_fallback: bool,
+) -> tuple[str | None, str | None, str | None]:
+    image_url, page_url = query_page_image(
+        "zh.wikipedia",
+        name,
+        context,
+        fallback_context,
+        allow_insecure_fallback,
+    )
     if image_url:
         return image_url, page_url, "zh.wikipedia"
 
     search_query = f"{name} 花"
-    title = search_title("zh.wikipedia", search_query)
+    title = search_title(
+        "zh.wikipedia",
+        search_query,
+        context,
+        fallback_context,
+        allow_insecure_fallback,
+    )
     if title:
-        image_url, page_url = query_page_image("zh.wikipedia", title)
+        image_url, page_url = query_page_image(
+            "zh.wikipedia",
+            title,
+            context,
+            fallback_context,
+            allow_insecure_fallback,
+        )
         if image_url:
             return image_url, page_url, "zh.wikipedia"
 
-    title = search_title("en.wikipedia", name)
+    title = search_title(
+        "en.wikipedia",
+        name,
+        context,
+        fallback_context,
+        allow_insecure_fallback,
+    )
     if title:
-        image_url, page_url = query_page_image("en.wikipedia", title)
+        image_url, page_url = query_page_image(
+            "en.wikipedia",
+            title,
+            context,
+            fallback_context,
+            allow_insecure_fallback,
+        )
         if image_url:
             return image_url, page_url, "en.wikipedia"
 
@@ -126,14 +208,37 @@ def main() -> None:
         default=0.2,
         help="Delay (seconds) between API requests.",
     )
+    parser.add_argument(
+        "--insecure",
+        action="store_true",
+        help="Disable SSL certificate verification for all requests (not recommended).",
+    )
+    parser.add_argument(
+        "--no-insecure-fallback",
+        action="store_true",
+        help="Disable automatic SSL verification fallback.",
+    )
     args = parser.parse_args()
+
+    verified_context, insecure_context = build_ssl_contexts()
+    allow_insecure_fallback = not args.no_insecure_fallback
+    if args.insecure:
+        ssl_context = insecure_context
+        allow_insecure_fallback = False
+    else:
+        ssl_context = verified_context
 
     flowers = parse_flower_md(SOURCE_MD)
     for record in flowers:
         if args.offline:
             continue
         try:
-            image_url, page_url, source = resolve_image(record.name)
+            image_url, page_url, source = resolve_image(
+                record.name,
+                ssl_context,
+                insecure_context,
+                allow_insecure_fallback,
+            )
             record.image_url = image_url
             record.page_url = page_url
             record.source = source
