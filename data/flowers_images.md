@@ -20,6 +20,8 @@ python3 scripts/fetch_flower_images.py
 - `page_url`：来源页面
 - `source`：来源站点（如 `zh.wikipedia`）
 
+脚本会为每次请求统一添加 `User-Agent` 请求头，若请求失败会输出失败的 URL，便于定位被拦截或不可达的链接。
+
 ## 无网络或被限制环境（生成模板）
 
 若当前环境无法访问外网，可先生成空模板，然后在可访问外网的环境中重新执行抓取脚本覆盖。

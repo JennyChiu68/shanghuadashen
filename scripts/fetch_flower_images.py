@@ -10,6 +10,7 @@ from dataclasses import dataclass
 
 SOURCE_MD = "data/flowers.md"
 OUTPUT_JSON = "data/flowers.json"
+USER_AGENT = "FlowerImageFetcher/1.0 (+https://example.com)"
 
 
 @dataclass
@@ -23,8 +24,13 @@ class FlowerRecord:
 
 
 def fetch_json(url: str) -> dict:
-    with urllib.request.urlopen(url) as response:
-        return json.loads(response.read().decode("utf-8"))
+    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    try:
+        with urllib.request.urlopen(request) as response:
+            return json.loads(response.read().decode("utf-8"))
+    except (urllib.error.URLError, TimeoutError) as exc:
+        print(f"Request failed for {url}: {exc}")
+        raise
 
 
 def build_page_url(site: str, title: str) -> str:
