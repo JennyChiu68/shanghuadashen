@@ -1,0 +1,802 @@
+[
+  {
+    "name": "玫瑰",
+    "group": 1,
+    "tier": "最常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "百合",
+    "group": 1,
+    "tier": "最常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "康乃馨",
+    "group": 1,
+    "tier": "最常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "牡丹",
+    "group": 1,
+    "tier": "最常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "菊花",
+    "group": 1,
+    "tier": "最常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "向日葵",
+    "group": 1,
+    "tier": "最常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "荷花",
+    "group": 1,
+    "tier": "最常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "兰花",
+    "group": 1,
+    "tier": "最常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "杜鹃",
+    "group": 1,
+    "tier": "最常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "迎春花",
+    "group": 1,
+    "tier": "最常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "茉莉",
+    "group": 1,
+    "tier": "最常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "桂花",
+    "group": 1,
+    "tier": "最常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "月季",
+    "group": 1,
+    "tier": "最常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "牵牛花",
+    "group": 1,
+    "tier": "最常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "紫薇",
+    "group": 1,
+    "tier": "最常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "樱花",
+    "group": 1,
+    "tier": "最常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "桃花",
+    "group": 1,
+    "tier": "最常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "梅花",
+    "group": 1,
+    "tier": "最常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "玉兰",
+    "group": 1,
+    "tier": "最常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "木棉花",
+    "group": 1,
+    "tier": "最常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "郁金香",
+    "group": 2,
+    "tier": "次常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "水仙",
+    "group": 2,
+    "tier": "次常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "海棠",
+    "group": 2,
+    "tier": "次常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "凤仙花",
+    "group": 2,
+    "tier": "次常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "石榴花",
+    "group": 2,
+    "tier": "次常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "丁香",
+    "group": 2,
+    "tier": "次常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "栀子花",
+    "group": 2,
+    "tier": "次常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "金银花",
+    "group": 2,
+    "tier": "次常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "蔷薇",
+    "group": 2,
+    "tier": "次常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "蝴蝶兰",
+    "group": 2,
+    "tier": "次常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "虞美人",
+    "group": 2,
+    "tier": "次常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "风信子",
+    "group": 2,
+    "tier": "次常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "芍药",
+    "group": 2,
+    "tier": "次常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "薰衣草",
+    "group": 2,
+    "tier": "次常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "彼岸花",
+    "group": 2,
+    "tier": "次常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "夹竹桃",
+    "group": 2,
+    "tier": "次常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "太阳花",
+    "group": 2,
+    "tier": "次常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "仙客来",
+    "group": 2,
+    "tier": "次常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "马蹄莲",
+    "group": 2,
+    "tier": "次常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "君子兰",
+    "group": 2,
+    "tier": "次常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "鸢尾花",
+    "group": 3,
+    "tier": "一般常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "天竺葵",
+    "group": 3,
+    "tier": "一般常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "薄荷花",
+    "group": 3,
+    "tier": "一般常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "鸡冠花",
+    "group": 3,
+    "tier": "一般常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "旱金莲",
+    "group": 3,
+    "tier": "一般常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "大丽花",
+    "group": 3,
+    "tier": "一般常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "满天星",
+    "group": 3,
+    "tier": "一般常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "文心兰",
+    "group": 3,
+    "tier": "一般常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "石斛兰",
+    "group": 3,
+    "tier": "一般常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "鸡蛋花",
+    "group": 3,
+    "tier": "一般常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "金盏花",
+    "group": 3,
+    "tier": "一般常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "三角梅",
+    "group": 3,
+    "tier": "一般常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "紫罗兰",
+    "group": 3,
+    "tier": "一般常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "蓝雪花",
+    "group": 3,
+    "tier": "一般常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "金鱼草",
+    "group": 3,
+    "tier": "一般常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "勿忘我",
+    "group": 3,
+    "tier": "一般常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "西番莲",
+    "group": 3,
+    "tier": "一般常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "金合欢",
+    "group": 3,
+    "tier": "一般常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "虎刺梅",
+    "group": 3,
+    "tier": "一般常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "紫丁香",
+    "group": 3,
+    "tier": "一般常见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "黑心菊",
+    "group": 4,
+    "tier": "较少见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "红掌",
+    "group": 4,
+    "tier": "较少见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "木槿",
+    "group": 4,
+    "tier": "较少见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "合欢花",
+    "group": 4,
+    "tier": "较少见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "扶桑花",
+    "group": 4,
+    "tier": "较少见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "萱草",
+    "group": 4,
+    "tier": "较少见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "罂粟花",
+    "group": 4,
+    "tier": "较少见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "金雀花",
+    "group": 4,
+    "tier": "较少见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "雪滴花",
+    "group": 4,
+    "tier": "较少见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "蕙兰",
+    "group": 4,
+    "tier": "较少见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "蔓长春花",
+    "group": 4,
+    "tier": "较少见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "木芙蓉",
+    "group": 4,
+    "tier": "较少见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "蜀葵",
+    "group": 4,
+    "tier": "较少见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "鹿角海棠",
+    "group": 4,
+    "tier": "较少见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "石蒜",
+    "group": 4,
+    "tier": "较少见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "红花酢浆草",
+    "group": 4,
+    "tier": "较少见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "玉簪花",
+    "group": 4,
+    "tier": "较少见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "大花蕙兰",
+    "group": 4,
+    "tier": "较少见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "白掌",
+    "group": 4,
+    "tier": "较少见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "珍珠梅",
+    "group": 4,
+    "tier": "较少见",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "绿绒蒿",
+    "group": 5,
+    "tier": "罕见/冷门",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "蓝花楹",
+    "group": 5,
+    "tier": "罕见/冷门",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "芝樱",
+    "group": 5,
+    "tier": "罕见/冷门",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "铁线莲",
+    "group": 5,
+    "tier": "罕见/冷门",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "蓝罂粟",
+    "group": 5,
+    "tier": "罕见/冷门",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "大王花（莱佛士花）",
+    "group": 5,
+    "tier": "罕见/冷门",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "兜兰",
+    "group": 5,
+    "tier": "罕见/冷门",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "鹤望兰",
+    "group": 5,
+    "tier": "罕见/冷门",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "豹斑花",
+    "group": 5,
+    "tier": "罕见/冷门",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "血龙木花",
+    "group": 5,
+    "tier": "罕见/冷门",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "月光花",
+    "group": 5,
+    "tier": "罕见/冷门",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "迷迭香花",
+    "group": 5,
+    "tier": "罕见/冷门",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "琴叶珊瑚",
+    "group": 5,
+    "tier": "罕见/冷门",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "梨花",
+    "group": 5,
+    "tier": "罕见/冷门",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "榆叶梅",
+    "group": 5,
+    "tier": "罕见/冷门",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "银莲花",
+    "group": 5,
+    "tier": "罕见/冷门",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "琉璃苣",
+    "group": 5,
+    "tier": "罕见/冷门",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "美人蕉",
+    "group": 5,
+    "tier": "罕见/冷门",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "旱伞草花",
+    "group": 5,
+    "tier": "罕见/冷门",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  },
+  {
+    "name": "天人菊",
+    "group": 5,
+    "tier": "罕见/冷门",
+    "image_url": null,
+    "page_url": null,
+    "source": null
+  }
+]
