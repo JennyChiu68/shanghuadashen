@@ -11,6 +11,7 @@ from dataclasses import dataclass
 
 SOURCE_MD = "data/flowers.md"
 OUTPUT_JSON = "data/flowers.json"
+DEFAULT_OVERRIDE_PATH = "data/flower_overrides.json"
 USER_AGENT = "FlowerImageFetcher/1.0 (+https://example.com)"
 DEFAULT_TIMEOUT = 15
 
@@ -280,6 +281,24 @@ def parse_flower_md(path: str) -> list[FlowerRecord]:
     return records
 
 
+def load_overrides(path: str) -> dict[str, dict[str, str | None]]:
+    try:
+        with open(path, "r", encoding="utf-8") as handle:
+            data = json.load(handle)
+    except FileNotFoundError:
+        return {}
+    except json.JSONDecodeError as exc:
+        raise ValueError(f"Override file {path} is not valid JSON: {exc}") from exc
+    if not isinstance(data, dict):
+        raise ValueError("Override data must be a JSON object keyed by flower name.")
+    for name, value in data.items():
+        if not isinstance(value, dict):
+            raise ValueError(
+                f"Override entry for {name!r} must be an object with image_url/page_url."
+            )
+    return data
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Fetch flower images from configured sources.")
     parser.add_argument(
@@ -333,6 +352,16 @@ def main() -> None:
         action="store_true",
         help="Disable automatic SSL verification fallback.",
     )
+    parser.add_argument(
+        "--override-file",
+        default=DEFAULT_OVERRIDE_PATH,
+        help="JSON file mapping flower names to image/page overrides.",
+    )
+    parser.add_argument(
+        "--override-only",
+        action="store_true",
+        help="Only apply overrides without any network requests.",
+    )
     args = parser.parse_args()
 
     verified_context, insecure_context = build_ssl_contexts()
@@ -350,7 +379,15 @@ def main() -> None:
         opener = verified_opener
 
     flowers = parse_flower_md(SOURCE_MD)
+    overrides = load_overrides(args.override_file)
     for record in flowers:
+        override = overrides.get(record.name, {})
+        if override:
+            record.image_url = override.get("image_url")
+            record.page_url = override.get("page_url")
+            record.source = override.get("source") or record.source
+            if args.override_only:
+                continue
         if args.offline:
             continue
         try:
