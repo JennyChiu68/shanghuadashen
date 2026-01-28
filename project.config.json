@@ -1,0 +1,10 @@
+{
+  "description": "flower list mini program",
+  "setting": {
+    "urlCheck": false
+  },
+  "compileType": "miniprogram",
+  "appid": "touristappid",
+  "projectname": "shanghuadashen",
+  "miniprogramRoot": "./"
+}

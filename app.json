@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/flower-list/flower-list",
+    "pages/flower-detail/flower-detail"
+  ],
+  "window": {
+    "navigationBarTitleText": "花名列表",
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundTextStyle": "light"
+  }
+}
