@@ -10,10 +10,69 @@
     <main class="page">
       <header class="page__header">
         <h1>花名列表</h1>
-        <p>当前版本只展示花名与分组，图片稍后再补。</p>
+        <p>当前版本展示花名、分组与基础元信息，图片稍后再补。</p>
       </header>
 
+      <section class="meta-controls" aria-label="元信息筛选">
+        <div id="meta-progress" class="meta-controls__progress">元信息完成度：计算中…</div>
+        <div id="meta-stats" class="meta-controls__stats">已补充：0，待补充：0</div>
+        <div id="meta-filter-summary" class="meta-controls__summary">当前筛选：全部</div>
+        <label class="meta-controls__field">
+          搜索花名：
+          <input
+            type="search"
+            id="search-name"
+            placeholder="例如：玫瑰"
+            aria-describedby="search-help"
+          />
+        </label>
+        <button class="meta-controls__reset secondary" type="button" id="clear-search">清除搜索</button>
+        <div id="search-help" class="meta-controls__help">
+          支持搜索花名、别名、花语、季节、常见度与组别。
+        </div>
+        <label class="meta-controls__field">
+          分组：
+          <select id="filter-group">
+            <option value="all">全部</option>
+          </select>
+        </label>
+        <label class="meta-controls__field">
+          常见度：
+          <select id="filter-tier">
+            <option value="all">全部</option>
+          </select>
+        </label>
+        <label class="meta-controls__toggle">
+          <input type="checkbox" id="filter-filled" />
+          只看已补充元信息
+        </label>
+        <label class="meta-controls__toggle">
+          <input type="checkbox" id="filter-alias" />
+          仅有别名
+        </label>
+        <label class="meta-controls__toggle">
+          <input type="checkbox" id="filter-meaning" />
+          仅有花语
+        </label>
+        <label class="meta-controls__toggle">
+          <input type="checkbox" id="filter-season" />
+          仅有季节
+        </label>
+        <label class="meta-controls__field">
+          排序：
+          <select id="sort-order">
+            <option value="default">按原顺序</option>
+            <option value="name">按花名</option>
+            <option value="filled">已补充优先</option>
+          </select>
+        </label>
+        <button class="meta-controls__reset" type="button" id="reset-filters">清除条件</button>
+        <p class="meta-controls__hint">排序仅在每个分组内生效。</p>
+      </section>
+
       <section id="status" class="status" aria-live="polite">加载中…</section>
+
+      <section id="empty" class="empty" hidden>没有匹配的花名，请调整筛选条件。</section>
 
       <section id="groups" class="groups" hidden></section>
     </main>
