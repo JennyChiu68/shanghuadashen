@@ -19,3 +19,7 @@ python3 -m http.server 8000
 ```
 http://localhost:8000/web/flower-list.html
 ```
+
+## 微信小程序版本
+
+已新增微信小程序的基础结构，页面入口为 `pages/flower-list/flower-list`，读取同一份 `data/flowers.json` 与 `data/flower_meta.json` 数据进行展示与筛选，并支持点击卡片进入详情页（`pages/flower-detail/flower-detail`）。可以直接在微信开发者工具中打开本仓库进行预览。

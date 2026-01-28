@@ -1,0 +1,105 @@
+<view class="page">
+  <view class="page__header">
+    <text class="page__title">花名列表</text>
+    <text class="page__subtitle">当前版本展示花名、分组与基础元信息，图片稍后再补。</text>
+  </view>
+
+  <view class="meta-controls">
+    <text class="meta-controls__progress">{{metaProgressText}}</text>
+    <text class="meta-controls__stats">{{metaStatsText}}</text>
+    <text class="meta-controls__summary">{{metaSummaryText}}</text>
+
+    <view class="meta-controls__field">
+      <text class="meta-controls__label">搜索花名：</text>
+      <input
+        class="meta-controls__input"
+        type="text"
+        placeholder="例如：玫瑰"
+        value="{{keyword}}"
+        bindinput="onKeywordInput"
+      />
+    </view>
+    <button class="meta-controls__reset secondary" type="default" bindtap="onClearSearch">清除搜索</button>
+    <text class="meta-controls__help">支持搜索花名、别名、花语、季节、常见度与组别。</text>
+
+    <view class="meta-controls__field">
+      <text class="meta-controls__label">分组：</text>
+      <picker mode="selector" range="{{groupOptions}}" value="{{groupIndex}}" bindchange="onGroupChange">
+        <view class="meta-controls__picker">{{groupOptions[groupIndex]}}</view>
+      </picker>
+    </view>
+
+    <view class="meta-controls__field">
+      <text class="meta-controls__label">常见度：</text>
+      <picker mode="selector" range="{{tierOptions}}" value="{{tierIndex}}" bindchange="onTierChange">
+        <view class="meta-controls__picker">{{tierOptions[tierIndex]}}</view>
+      </picker>
+    </view>
+
+    <view class="meta-controls__toggle">
+      <switch checked="{{onlyFilled}}" bindchange="onToggleFilled" />
+      <text>只看已补充元信息</text>
+    </view>
+    <view class="meta-controls__toggle">
+      <switch checked="{{aliasOnly}}" bindchange="onToggleAlias" />
+      <text>仅有别名</text>
+    </view>
+    <view class="meta-controls__toggle">
+      <switch checked="{{meaningOnly}}" bindchange="onToggleMeaning" />
+      <text>仅有花语</text>
+    </view>
+    <view class="meta-controls__toggle">
+      <switch checked="{{seasonOnly}}" bindchange="onToggleSeason" />
+      <text>仅有季节</text>
+    </view>
+
+    <view class="meta-controls__field">
+      <text class="meta-controls__label">排序：</text>
+      <picker mode="selector" range="{{sortOptions}}" value="{{sortIndex}}" bindchange="onSortChange">
+        <view class="meta-controls__picker">{{sortOptions[sortIndex]}}</view>
+      </picker>
+    </view>
+
+    <button class="meta-controls__reset" type="default" bindtap="onResetFilters">清除条件</button>
+    <text class="meta-controls__hint">排序仅在每个分组内生效。</text>
+  </view>
+
+  <view class="status">{{statusText}}</view>
+
+  <view class="empty" wx:if="{{emptyVisible}}">没有匹配的花名，请调整筛选条件。</view>
+
+  <view class="groups" wx:if="{{!emptyVisible}}">
+    <view class="group" wx:for="{{groups}}" wx:key="groupId" wx:for-item="group">
+      <view class="group__title">
+        <text>第 {{group.groupId}} 组</text>
+        <text class="group__tier">{{group.tier}}</text>
+      </view>
+      <view class="flower-list">
+        <view class="flower-card" wx:for="{{group.flowers}}" wx:key="name" wx:for-item="flower" data-name="{{flower.name}}" bindtap="onFlowerTap">
+          <view class="flower-card__image">
+            <image wx:if="{{flower.image_url}}" class="flower-card__img" src="{{flower.image_url}}" mode="aspectFill" />
+            <view wx:else class="flower-card__img placeholder">暂无图片</view>
+          </view>
+          <view class="flower-card__name">
+            <text wx:for="{{flower.nameHighlight}}" wx:key="index" wx:for-item="segment" class="{{segment.highlight ? 'highlight' : ''}}">{{segment.text}}</text>
+          </view>
+          <text class="flower-card__note">{{flower.imageNote}}</text>
+          <view class="flower-card__meta">
+            <view class="flower-card__meta-line">
+              <text class="flower-card__meta-label">别名：</text>
+              <text wx:for="{{flower.aliasHighlight}}" wx:key="index" wx:for-item="segment" class="flower-card__meta-value {{segment.highlight ? 'highlight' : ''}}">{{segment.text}}</text>
+            </view>
+            <view class="flower-card__meta-line">
+              <text class="flower-card__meta-label">花语：</text>
+              <text wx:for="{{flower.meaningHighlight}}" wx:key="index" wx:for-item="segment" class="flower-card__meta-value {{segment.highlight ? 'highlight' : ''}}">{{segment.text}}</text>
+            </view>
+            <view class="flower-card__meta-line">
+              <text class="flower-card__meta-label">季节：</text>
+              <text wx:for="{{flower.seasonHighlight}}" wx:key="index" wx:for-item="segment" class="flower-card__meta-value {{segment.highlight ? 'highlight' : ''}}">{{segment.text}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
