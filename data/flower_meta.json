@@ -1,0 +1,110 @@
+[
+  {
+    "name": "玫瑰",
+    "alias": ["玫瑰花"],
+    "meaning": "爱情与热情",
+    "season": "春夏"
+  },
+  {
+    "name": "百合",
+    "alias": ["香水百合"],
+    "meaning": "纯洁与祝福",
+    "season": "夏"
+  },
+  {
+    "name": "康乃馨",
+    "alias": ["香石竹"],
+    "meaning": "母爱与感恩",
+    "season": "春夏"
+  },
+  {
+    "name": "牡丹",
+    "alias": ["富贵花"],
+    "meaning": "富贵与圆满",
+    "season": "春"
+  },
+  {
+    "name": "菊花",
+    "alias": ["秋菊"],
+    "meaning": "高洁与坚韧",
+    "season": "秋"
+  },
+  {
+    "name": "向日葵",
+    "alias": ["太阳花"],
+    "meaning": "向往与忠诚",
+    "season": "夏"
+  },
+  {
+    "name": "荷花",
+    "alias": ["莲花"],
+    "meaning": "清雅与纯净",
+    "season": "夏"
+  },
+  {
+    "name": "兰花",
+    "alias": ["国兰"],
+    "meaning": "高雅与清芬",
+    "season": "春夏"
+  },
+  {
+    "name": "杜鹃",
+    "alias": ["映山红"],
+    "meaning": "思念与热烈",
+    "season": "春"
+  },
+  {
+    "name": "樱花",
+    "alias": ["山樱"],
+    "meaning": "美好与短暂",
+    "season": "春"
+  },
+  {
+    "name": "桃花",
+    "alias": ["桃花春"],
+    "meaning": "爱情与好运",
+    "season": "春"
+  },
+  {
+    "name": "梅花",
+    "alias": ["寒梅"],
+    "meaning": "坚韧与高洁",
+    "season": "冬春"
+  },
+  {
+    "name": "桂花",
+    "alias": ["木犀"],
+    "meaning": "吉祥与团圆",
+    "season": "秋"
+  },
+  {
+    "name": "月季",
+    "alias": ["月月红"],
+    "meaning": "长久的爱",
+    "season": "春夏秋"
+  },
+  {
+    "name": "牵牛花",
+    "alias": ["喇叭花"],
+    "meaning": "守望与希望",
+    "season": "夏秋"
+  },
+  {
+    "name": "紫薇",
+    "alias": ["百日红"],
+    "meaning": "长久与安宁",
+    "season": "夏秋"
+  },
+  {
+    "name": "玉兰",
+    "alias": ["白玉兰"],
+    "meaning": "纯洁与高贵",
+    "season": "春"
+  },
+  {
+    "name": "木棉花",
+    "alias": ["英雄花"],
+    "meaning": "热烈与坚韧",
+    "season": "春"
+  }
+]
