@@ -9,6 +9,8 @@
 - `alias`：数组，写常见别名，没有就留空数组 `[]`。
 - `meaning`：一句话花语，没有就留空字符串 `""`。
 - `season`：开花季节，建议用“春/夏/秋/冬”或“春夏/夏秋”等组合。
+- `pinyin`：花名拼音（不含空格），用于拼音搜索。
+- `pinyinInitials`：花名拼音首字母，用于首字母搜索。
 
 ```bash
 python3 -m http.server 8000
@@ -18,6 +20,12 @@ python3 -m http.server 8000
 
 ```
 http://localhost:8000/web/flower-list.html
+```
+
+### 元信息校验脚本
+
+```bash
+python3 scripts/validate_flower_meta.py
 ```
 
 ## 微信小程序版本

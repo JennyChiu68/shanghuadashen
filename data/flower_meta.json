@@ -5,7 +5,9 @@
       "玫瑰花"
     ],
     "meaning": "爱情与热情",
-    "season": "春夏"
+    "season": "春夏",
+    "pinyin": "meigui",
+    "pinyinInitials": "mg"
   },
   {
     "name": "百合",
@@ -13,7 +15,9 @@
       "香水百合"
     ],
     "meaning": "纯洁与祝福",
-    "season": "夏"
+    "season": "夏",
+    "pinyin": "baihe",
+    "pinyinInitials": "bh"
   },
   {
     "name": "康乃馨",
@@ -21,7 +25,9 @@
       "香石竹"
     ],
     "meaning": "母爱与感恩",
-    "season": "春夏"
+    "season": "春夏",
+    "pinyin": "kangnaixin",
+    "pinyinInitials": "knx"
   },
   {
     "name": "牡丹",
@@ -29,7 +35,9 @@
       "富贵花"
     ],
     "meaning": "富贵与圆满",
-    "season": "春"
+    "season": "春",
+    "pinyin": "mudan",
+    "pinyinInitials": "md"
   },
   {
     "name": "菊花",
@@ -37,7 +45,9 @@
       "秋菊"
     ],
     "meaning": "高洁与坚韧",
-    "season": "秋"
+    "season": "秋",
+    "pinyin": "juhua",
+    "pinyinInitials": "jh"
   },
   {
     "name": "向日葵",
@@ -45,7 +55,9 @@
       "太阳花"
     ],
     "meaning": "向往与忠诚",
-    "season": "夏"
+    "season": "夏",
+    "pinyin": "xiangrikui",
+    "pinyinInitials": "xrk"
   },
   {
     "name": "荷花",
@@ -53,7 +65,9 @@
       "莲花"
     ],
     "meaning": "清雅与纯净",
-    "season": "夏"
+    "season": "夏",
+    "pinyin": "hehua",
+    "pinyinInitials": "hh"
   },
   {
     "name": "兰花",
@@ -61,7 +75,9 @@
       "国兰"
     ],
     "meaning": "高雅与清芬",
-    "season": "春夏"
+    "season": "春夏",
+    "pinyin": "lanhua",
+    "pinyinInitials": "lh"
   },
   {
     "name": "杜鹃",
@@ -69,7 +85,9 @@
       "映山红"
     ],
     "meaning": "思念与热烈",
-    "season": "春"
+    "season": "春",
+    "pinyin": "dujuan",
+    "pinyinInitials": "dj"
   },
   {
     "name": "樱花",
@@ -77,7 +95,9 @@
       "山樱"
     ],
     "meaning": "美好与短暂",
-    "season": "春"
+    "season": "春",
+    "pinyin": "yinghua",
+    "pinyinInitials": "yh"
   },
   {
     "name": "桃花",
@@ -85,7 +105,9 @@
       "桃花春"
     ],
     "meaning": "爱情与好运",
-    "season": "春"
+    "season": "春",
+    "pinyin": "taohua",
+    "pinyinInitials": "th"
   },
   {
     "name": "梅花",
@@ -93,7 +115,9 @@
       "寒梅"
     ],
     "meaning": "坚韧与高洁",
-    "season": "冬春"
+    "season": "冬春",
+    "pinyin": "meihua",
+    "pinyinInitials": "mh"
   },
   {
     "name": "桂花",
@@ -101,15 +125,20 @@
       "木犀"
     ],
     "meaning": "吉祥与团圆",
-    "season": "秋"
+    "season": "秋",
+    "pinyin": "guihua",
+    "pinyinInitials": "gh"
   },
   {
     "name": "月季",
     "alias": [
-      "月月红"
+      "月月红",
+      "四季玫瑰"
     ],
     "meaning": "长久的爱",
-    "season": "春夏秋"
+    "season": "春夏秋",
+    "pinyin": "yueji",
+    "pinyinInitials": "yj"
   },
   {
     "name": "牵牛花",
@@ -117,7 +146,9 @@
       "喇叭花"
     ],
     "meaning": "守望与希望",
-    "season": "夏秋"
+    "season": "夏秋",
+    "pinyin": "qianniuhua",
+    "pinyinInitials": "qnh"
   },
   {
     "name": "紫薇",
@@ -125,7 +156,9 @@
       "百日红"
     ],
     "meaning": "长久与安宁",
-    "season": "夏秋"
+    "season": "夏秋",
+    "pinyin": "ziwei",
+    "pinyinInitials": "zw"
   },
   {
     "name": "玉兰",
@@ -133,7 +166,9 @@
       "白玉兰"
     ],
     "meaning": "纯洁与高贵",
-    "season": "春"
+    "season": "春",
+    "pinyin": "yulan",
+    "pinyinInitials": "yl"
   },
   {
     "name": "木棉花",
@@ -141,7 +176,9 @@
       "英雄花"
     ],
     "meaning": "热烈与坚韧",
-    "season": "春"
+    "season": "春",
+    "pinyin": "mumianhua",
+    "pinyinInitials": "mmh"
   },
   {
     "name": "迎春花",
@@ -149,7 +186,9 @@
       "迎春"
     ],
     "meaning": "希望与新生",
-    "season": "春"
+    "season": "春",
+    "pinyin": "yingchunhua",
+    "pinyinInitials": "ych"
   },
   {
     "name": "茉莉",
@@ -157,7 +196,9 @@
       "茉莉花"
     ],
     "meaning": "纯洁与温柔",
-    "season": "夏秋"
+    "season": "夏秋",
+    "pinyin": "moli",
+    "pinyinInitials": "ml"
   },
   {
     "name": "郁金香",
@@ -165,7 +206,9 @@
       "洋郁金香"
     ],
     "meaning": "高贵与祝福",
-    "season": "春"
+    "season": "春",
+    "pinyin": "yujinxiang",
+    "pinyinInitials": "yjx"
   },
   {
     "name": "水仙",
@@ -173,7 +216,9 @@
       "中国水仙"
     ],
     "meaning": "纯净与自持",
-    "season": "冬春"
+    "season": "冬春",
+    "pinyin": "shuixian",
+    "pinyinInitials": "sx"
   },
   {
     "name": "海棠",
@@ -181,7 +226,9 @@
       "海棠花"
     ],
     "meaning": "柔美与思念",
-    "season": "春"
+    "season": "春",
+    "pinyin": "haitang",
+    "pinyinInitials": "ht"
   },
   {
     "name": "凤仙花",
@@ -189,7 +236,9 @@
       "指甲花"
     ],
     "meaning": "热情与活力",
-    "season": "夏秋"
+    "season": "夏秋",
+    "pinyin": "fengxianhua",
+    "pinyinInitials": "fxh"
   },
   {
     "name": "石榴花",
@@ -197,7 +246,9 @@
       "榴花"
     ],
     "meaning": "热烈与繁荣",
-    "season": "夏"
+    "season": "夏",
+    "pinyin": "shiliuhua",
+    "pinyinInitials": "slh"
   },
   {
     "name": "丁香",
@@ -205,7 +256,9 @@
       "丁香花"
     ],
     "meaning": "温柔与思念",
-    "season": "春"
+    "season": "春",
+    "pinyin": "dingxiang",
+    "pinyinInitials": "dx"
   },
   {
     "name": "栀子花",
@@ -213,7 +266,9 @@
       "栀子"
     ],
     "meaning": "清雅与守候",
-    "season": "夏"
+    "season": "夏",
+    "pinyin": "zhizihua",
+    "pinyinInitials": "zzh"
   },
   {
     "name": "金银花",
@@ -221,7 +276,9 @@
       "忍冬"
     ],
     "meaning": "真诚与守护",
-    "season": "夏"
+    "season": "夏",
+    "pinyin": "jinyinhua",
+    "pinyinInitials": "jyh"
   },
   {
     "name": "蔷薇",
@@ -229,7 +286,9 @@
       "蔷薇花"
     ],
     "meaning": "浪漫与勇敢",
-    "season": "春夏"
+    "season": "春夏",
+    "pinyin": "qiangwei",
+    "pinyinInitials": "qw"
   },
   {
     "name": "蝴蝶兰",
@@ -237,7 +296,9 @@
       "蝶兰"
     ],
     "meaning": "优雅与幸福",
-    "season": "春夏"
+    "season": "春夏",
+    "pinyin": "hudielan",
+    "pinyinInitials": "hdl"
   },
   {
     "name": "虞美人",
@@ -245,7 +306,9 @@
       "丽春花"
     ],
     "meaning": "柔美与思念",
-    "season": "春夏"
+    "season": "春夏",
+    "pinyin": "yumeiren",
+    "pinyinInitials": "ymr"
   },
   {
     "name": "风信子",
@@ -253,15 +316,20 @@
       "洋水仙"
     ],
     "meaning": "重生与希望",
-    "season": "春"
+    "season": "春",
+    "pinyin": "fengxinzi",
+    "pinyinInitials": "fxz"
   },
   {
     "name": "芍药",
     "alias": [
-      "将离草"
+      "将离草",
+      "将离"
     ],
     "meaning": "含蓄与美丽",
-    "season": "春夏"
+    "season": "春夏",
+    "pinyin": "shaoyao",
+    "pinyinInitials": "sy"
   },
   {
     "name": "薰衣草",
@@ -269,7 +337,9 @@
       "熏衣草"
     ],
     "meaning": "宁静与守候",
-    "season": "夏"
+    "season": "夏",
+    "pinyin": "xunyicao",
+    "pinyinInitials": "xyc"
   },
   {
     "name": "彼岸花",
@@ -277,15 +347,20 @@
       "曼珠沙华"
     ],
     "meaning": "思念与彼岸",
-    "season": "秋"
+    "season": "秋",
+    "pinyin": "biananhua",
+    "pinyinInitials": "bah"
   },
   {
     "name": "夹竹桃",
     "alias": [
-      "柳叶桃"
+      "柳叶桃",
+      "夹竹"
     ],
     "meaning": "坚韧与守护",
-    "season": "夏秋"
+    "season": "夏秋",
+    "pinyin": "jiazhutao",
+    "pinyinInitials": "jzt"
   },
   {
     "name": "太阳花",
@@ -293,7 +368,9 @@
       "大花马齿苋"
     ],
     "meaning": "阳光与活力",
-    "season": "夏秋"
+    "season": "夏秋",
+    "pinyin": "taiyanghua",
+    "pinyinInitials": "tyh"
   },
   {
     "name": "仙客来",
@@ -301,7 +378,9 @@
       "兔子花"
     ],
     "meaning": "好运与喜悦",
-    "season": "冬春"
+    "season": "冬春",
+    "pinyin": "xiankelai",
+    "pinyinInitials": "xkl"
   },
   {
     "name": "马蹄莲",
@@ -309,7 +388,9 @@
       "海芋"
     ],
     "meaning": "纯洁与祝福",
-    "season": "春夏"
+    "season": "春夏",
+    "pinyin": "matilian",
+    "pinyinInitials": "mtl"
   },
   {
     "name": "君子兰",
@@ -317,7 +398,9 @@
       "大叶石蒜"
     ],
     "meaning": "高洁与坚韧",
-    "season": "冬春"
+    "season": "冬春",
+    "pinyin": "junzilan",
+    "pinyinInitials": "jzl"
   },
   {
     "name": "鸢尾花",
@@ -325,7 +408,9 @@
       "蝴蝶花"
     ],
     "meaning": "希望与勇气",
-    "season": "春夏"
+    "season": "春夏",
+    "pinyin": "yuanweihua",
+    "pinyinInitials": "ywh"
   },
   {
     "name": "天竺葵",
@@ -333,7 +418,9 @@
       "洋绣球"
     ],
     "meaning": "幸福与守护",
-    "season": "春夏"
+    "season": "春夏",
+    "pinyin": "tianzhukui",
+    "pinyinInitials": "tzk"
   },
   {
     "name": "薄荷花",
@@ -341,15 +428,20 @@
       "薄荷"
     ],
     "meaning": "清新与活力",
-    "season": "夏"
+    "season": "夏",
+    "pinyin": "bohehua",
+    "pinyinInitials": "bhh"
   },
   {
     "name": "鸡冠花",
     "alias": [
-      "鸡冠"
+      "鸡冠",
+      "鸡髻花"
     ],
     "meaning": "热情与真诚",
-    "season": "夏秋"
+    "season": "夏秋",
+    "pinyin": "jiguanhua",
+    "pinyinInitials": "jgh"
   },
   {
     "name": "旱金莲",
@@ -357,15 +449,20 @@
       "金莲花"
     ],
     "meaning": "积极与光明",
-    "season": "夏秋"
+    "season": "夏秋",
+    "pinyin": "hanjinlian",
+    "pinyinInitials": "hjl"
   },
   {
     "name": "大丽花",
     "alias": [
-      "天竺牡丹"
+      "天竺牡丹",
+      "大理花"
     ],
     "meaning": "华丽与尊贵",
-    "season": "夏秋"
+    "season": "夏秋",
+    "pinyin": "dalihua",
+    "pinyinInitials": "dlh"
   },
   {
     "name": "满天星",
@@ -373,7 +470,9 @@
       "霞草"
     ],
     "meaning": "纯洁与陪伴",
-    "season": "夏"
+    "season": "夏",
+    "pinyin": "mantianxing",
+    "pinyinInitials": "mtx"
   },
   {
     "name": "文心兰",
@@ -381,7 +480,9 @@
       "跳舞兰"
     ],
     "meaning": "喜悦与热情",
-    "season": "春夏"
+    "season": "春夏",
+    "pinyin": "wenxinlan",
+    "pinyinInitials": "wxl"
   },
   {
     "name": "石斛兰",
@@ -389,7 +490,9 @@
       "石斛"
     ],
     "meaning": "坚韧与典雅",
-    "season": "春夏"
+    "season": "春夏",
+    "pinyin": "shihulan",
+    "pinyinInitials": "shl"
   },
   {
     "name": "鸡蛋花",
@@ -397,7 +500,9 @@
       "缅栀"
     ],
     "meaning": "纯净与祝福",
-    "season": "夏"
+    "season": "夏",
+    "pinyin": "jidanhua",
+    "pinyinInitials": "jdh"
   },
   {
     "name": "金盏花",
@@ -405,7 +510,9 @@
       "金盏菊"
     ],
     "meaning": "温暖与守护",
-    "season": "春夏"
+    "season": "春夏",
+    "pinyin": "jinzhanhua",
+    "pinyinInitials": "jzh"
   },
   {
     "name": "三角梅",
@@ -413,7 +520,9 @@
       "叶子花"
     ],
     "meaning": "热烈与坚持",
-    "season": "春夏秋"
+    "season": "春夏秋",
+    "pinyin": "sanjiaomei",
+    "pinyinInitials": "sjm"
   },
   {
     "name": "紫罗兰",
@@ -421,23 +530,31 @@
       "草紫罗兰"
     ],
     "meaning": "忠诚与永恒",
-    "season": "春"
+    "season": "春",
+    "pinyin": "ziluolan",
+    "pinyinInitials": "zll"
   },
   {
     "name": "蓝雪花",
     "alias": [
-      "蓝花丹"
+      "蓝花丹",
+      "蓝雪"
     ],
     "meaning": "宁静与清新",
-    "season": "夏秋"
+    "season": "夏秋",
+    "pinyin": "lanxuehua",
+    "pinyinInitials": "lxh"
   },
   {
     "name": "金鱼草",
     "alias": [
-      "龙口花"
+      "龙口花",
+      "龙头花"
     ],
     "meaning": "活力与自信",
-    "season": "春"
+    "season": "春",
+    "pinyin": "jinyucao",
+    "pinyinInitials": "jyc"
   },
   {
     "name": "勿忘我",
@@ -445,15 +562,20 @@
       "勿忘草"
     ],
     "meaning": "真挚与思念",
-    "season": "春夏"
+    "season": "春夏",
+    "pinyin": "wuwangwo",
+    "pinyinInitials": "www"
   },
   {
     "name": "西番莲",
     "alias": [
-      "百香果花"
+      "百香果花",
+      "百香花"
     ],
     "meaning": "神秘与热情",
-    "season": "夏秋"
+    "season": "夏秋",
+    "pinyin": "xifanlian",
+    "pinyinInitials": "xfl"
   },
   {
     "name": "金合欢",
@@ -461,7 +583,9 @@
       "相思树"
     ],
     "meaning": "温柔与思念",
-    "season": "春"
+    "season": "春",
+    "pinyin": "jinhehuan",
+    "pinyinInitials": "jhh"
   },
   {
     "name": "虎刺梅",
@@ -469,7 +593,9 @@
       "铁海棠"
     ],
     "meaning": "坚强与守护",
-    "season": "春夏"
+    "season": "春夏",
+    "pinyin": "hucimei",
+    "pinyinInitials": "hcm"
   },
   {
     "name": "紫丁香",
@@ -477,7 +603,9 @@
       "波斯丁香"
     ],
     "meaning": "温柔与回忆",
-    "season": "春"
+    "season": "春",
+    "pinyin": "zidingxiang",
+    "pinyinInitials": "zdx"
   },
   {
     "name": "黑心菊",
@@ -485,7 +613,9 @@
       "金光菊"
     ],
     "meaning": "乐观与希望",
-    "season": "夏秋"
+    "season": "夏秋",
+    "pinyin": "heixinju",
+    "pinyinInitials": "hxj"
   },
   {
     "name": "红掌",
@@ -493,7 +623,9 @@
       "花烛"
     ],
     "meaning": "热情与祝福",
-    "season": "春夏"
+    "season": "春夏",
+    "pinyin": "hongzhang",
+    "pinyinInitials": "hz"
   },
   {
     "name": "木槿",
@@ -501,15 +633,20 @@
       "槿花"
     ],
     "meaning": "坚韧与朴素",
-    "season": "夏秋"
+    "season": "夏秋",
+    "pinyin": "mujin",
+    "pinyinInitials": "mj"
   },
   {
     "name": "合欢花",
     "alias": [
-      "绒花"
+      "绒花",
+      "夜合"
     ],
     "meaning": "和合与喜悦",
-    "season": "夏"
+    "season": "夏",
+    "pinyin": "hehuanhua",
+    "pinyinInitials": "hhh"
   },
   {
     "name": "扶桑花",
@@ -517,15 +654,20 @@
       "朱槿"
     ],
     "meaning": "热烈与生机",
-    "season": "夏秋"
+    "season": "夏秋",
+    "pinyin": "fusanghua",
+    "pinyinInitials": "fsh"
   },
   {
     "name": "萱草",
     "alias": [
-      "黄花菜"
+      "黄花菜",
+      "忘忧草"
     ],
     "meaning": "忘忧与祝福",
-    "season": "夏"
+    "season": "夏",
+    "pinyin": "xuancao",
+    "pinyinInitials": "xc"
   },
   {
     "name": "罂粟花",
@@ -533,15 +675,20 @@
       "罂粟"
     ],
     "meaning": "绚烂与提醒",
-    "season": "春夏"
+    "season": "春夏",
+    "pinyin": "yingsuhua",
+    "pinyinInitials": "ysh"
   },
   {
     "name": "金雀花",
     "alias": [
-      "金雀儿"
+      "金雀儿",
+      "金雀"
     ],
     "meaning": "希望与新生",
-    "season": "春"
+    "season": "春",
+    "pinyin": "jinquehua",
+    "pinyinInitials": "jqh"
   },
   {
     "name": "雪滴花",
@@ -549,15 +696,20 @@
       "雪花莲"
     ],
     "meaning": "纯净与希望",
-    "season": "冬春"
+    "season": "冬春",
+    "pinyin": "xuedihua",
+    "pinyinInitials": "xdh"
   },
   {
     "name": "蕙兰",
     "alias": [
-      "国兰"
+      "国兰",
+      "惠兰"
     ],
     "meaning": "高雅与清香",
-    "season": "春"
+    "season": "春",
+    "pinyin": "huilan",
+    "pinyinInitials": "hl"
   },
   {
     "name": "蔓长春花",
@@ -565,7 +717,9 @@
       "长春花"
     ],
     "meaning": "永恒与坚韧",
-    "season": "春夏"
+    "season": "春夏",
+    "pinyin": "manchangchunhua",
+    "pinyinInitials": "mcch"
   },
   {
     "name": "木芙蓉",
@@ -573,7 +727,9 @@
       "芙蓉花"
     ],
     "meaning": "温柔与坚韧",
-    "season": "秋"
+    "season": "秋",
+    "pinyin": "mufurong",
+    "pinyinInitials": "mfr"
   },
   {
     "name": "蜀葵",
@@ -581,7 +737,9 @@
       "一丈红"
     ],
     "meaning": "热情与坚强",
-    "season": "夏"
+    "season": "夏",
+    "pinyin": "shukui",
+    "pinyinInitials": "sk"
   },
   {
     "name": "鹿角海棠",
@@ -589,15 +747,20 @@
       "鹿角大戟"
     ],
     "meaning": "坚韧与守护",
-    "season": "春夏"
+    "season": "春夏",
+    "pinyin": "lujiaohaitang",
+    "pinyinInitials": "ljht"
   },
   {
     "name": "石蒜",
     "alias": [
-      "红花石蒜"
+      "红花石蒜",
+      "龙爪花"
     ],
     "meaning": "思念与守候",
-    "season": "秋"
+    "season": "秋",
+    "pinyin": "shisuan",
+    "pinyinInitials": "ss"
   },
   {
     "name": "红花酢浆草",
@@ -605,7 +768,9 @@
       "红酢浆草"
     ],
     "meaning": "活力与快乐",
-    "season": "春秋"
+    "season": "春秋",
+    "pinyin": "honghuazujiangcao",
+    "pinyinInitials": "hhzjc"
   },
   {
     "name": "玉簪花",
@@ -613,23 +778,31 @@
       "玉簪"
     ],
     "meaning": "清雅与温柔",
-    "season": "夏"
+    "season": "夏",
+    "pinyin": "yuzanhua",
+    "pinyinInitials": "yzh"
   },
   {
     "name": "大花蕙兰",
     "alias": [
-      "大花兰"
+      "大花兰",
+      "大花惠兰"
     ],
     "meaning": "高雅与祝福",
-    "season": "春"
+    "season": "春",
+    "pinyin": "dahuahuilan",
+    "pinyinInitials": "dhhl"
   },
   {
     "name": "白掌",
     "alias": [
-      "一帆风顺"
+      "一帆风顺",
+      "白鹤芋"
     ],
     "meaning": "纯洁与顺遂",
-    "season": "夏"
+    "season": "夏",
+    "pinyin": "baizhang",
+    "pinyinInitials": "bz"
   },
   {
     "name": "珍珠梅",
@@ -637,7 +810,9 @@
       "珍珠花"
     ],
     "meaning": "纯净与期待",
-    "season": "春"
+    "season": "春",
+    "pinyin": "zhenzhumei",
+    "pinyinInitials": "zzm"
   },
   {
     "name": "绿绒蒿",
@@ -645,23 +820,31 @@
       "绿绒蒿"
     ],
     "meaning": "坚韧与稀有之美",
-    "season": "夏"
+    "season": "夏",
+    "pinyin": "lvronghao",
+    "pinyinInitials": "lrh"
   },
   {
     "name": "蓝花楹",
     "alias": [
-      "蓝花楹树"
+      "蓝花楹树",
+      "蓝楹"
     ],
     "meaning": "宁静与思念",
-    "season": "春夏"
+    "season": "春夏",
+    "pinyin": "lanhuaying",
+    "pinyinInitials": "lhy"
   },
   {
     "name": "芝樱",
     "alias": [
-      "丛生福禄考"
+      "丛生福禄考",
+      "苔樱"
     ],
     "meaning": "温柔与希望",
-    "season": "春"
+    "season": "春",
+    "pinyin": "zhiying",
+    "pinyinInitials": "zy"
   },
   {
     "name": "铁线莲",
@@ -669,7 +852,9 @@
       "威灵仙"
     ],
     "meaning": "坚韧与勇气",
-    "season": "春夏"
+    "season": "春夏",
+    "pinyin": "tiexianlian",
+    "pinyinInitials": "txl"
   },
   {
     "name": "蓝罂粟",
@@ -677,15 +862,20 @@
       "喜马拉雅蓝罂粟"
     ],
     "meaning": "梦幻与稀有",
-    "season": "夏"
+    "season": "夏",
+    "pinyin": "lanyingsu",
+    "pinyinInitials": "lys"
   },
   {
     "name": "大王花（莱佛士花）",
     "alias": [
-      "大王花"
+      "大王花",
+      "莱佛士花"
     ],
     "meaning": "神秘与独特",
-    "season": "夏"
+    "season": "夏",
+    "pinyin": "dawanghualaifoshihua",
+    "pinyinInitials": "dwhlfsh"
   },
   {
     "name": "兜兰",
@@ -693,7 +883,9 @@
       "拖鞋兰"
     ],
     "meaning": "高贵与珍稀",
-    "season": "春夏"
+    "season": "春夏",
+    "pinyin": "doulan",
+    "pinyinInitials": "dl"
   },
   {
     "name": "鹤望兰",
@@ -701,7 +893,9 @@
       "天堂鸟"
     ],
     "meaning": "自由与向往",
-    "season": "冬春"
+    "season": "冬春",
+    "pinyin": "hewanglan",
+    "pinyinInitials": "hwl"
   },
   {
     "name": "豹斑花",
@@ -709,7 +903,9 @@
       "豹皮花"
     ],
     "meaning": "神秘与独特",
-    "season": "夏"
+    "season": "夏",
+    "pinyin": "baobanhua",
+    "pinyinInitials": "bbh"
   },
   {
     "name": "血龙木花",
@@ -717,7 +913,9 @@
       "血龙木"
     ],
     "meaning": "坚韧与守护",
-    "season": "夏"
+    "season": "夏",
+    "pinyin": "xuelongmuhua",
+    "pinyinInitials": "xlmh"
   },
   {
     "name": "月光花",
@@ -725,7 +923,9 @@
       "夜来香"
     ],
     "meaning": "静谧与守候",
-    "season": "夏秋"
+    "season": "夏秋",
+    "pinyin": "yueguanghua",
+    "pinyinInitials": "ygh"
   },
   {
     "name": "迷迭香花",
@@ -733,7 +933,9 @@
       "迷迭香"
     ],
     "meaning": "记忆与思念",
-    "season": "春夏"
+    "season": "春夏",
+    "pinyin": "midiexianghua",
+    "pinyinInitials": "mdxh"
   },
   {
     "name": "琴叶珊瑚",
@@ -741,7 +943,9 @@
       "变叶珊瑚"
     ],
     "meaning": "热情与生机",
-    "season": "春夏"
+    "season": "春夏",
+    "pinyin": "qinyeshanhu",
+    "pinyinInitials": "qysh"
   },
   {
     "name": "梨花",
@@ -749,23 +953,31 @@
       "梨花"
     ],
     "meaning": "纯洁与离别",
-    "season": "春"
+    "season": "春",
+    "pinyin": "lihua",
+    "pinyinInitials": "lh"
   },
   {
     "name": "榆叶梅",
     "alias": [
-      "小桃红"
+      "小桃红",
+      "榆梅"
     ],
     "meaning": "美好与希望",
-    "season": "春"
+    "season": "春",
+    "pinyin": "yuyemei",
+    "pinyinInitials": "yym"
   },
   {
     "name": "银莲花",
     "alias": [
-      "风花"
+      "风花",
+      "银莲"
     ],
     "meaning": "期待与守护",
-    "season": "春"
+    "season": "春",
+    "pinyin": "yinlianhua",
+    "pinyinInitials": "ylh"
   },
   {
     "name": "琉璃苣",
@@ -773,7 +985,9 @@
       "琉璃苣"
     ],
     "meaning": "勇气与希望",
-    "season": "春夏"
+    "season": "春夏",
+    "pinyin": "liuliju",
+    "pinyinInitials": "llj"
   },
   {
     "name": "美人蕉",
@@ -781,7 +995,9 @@
       "昙华"
     ],
     "meaning": "热情与活力",
-    "season": "夏秋"
+    "season": "夏秋",
+    "pinyin": "meirenjiao",
+    "pinyinInitials": "mrj"
   },
   {
     "name": "旱伞草花",
@@ -789,7 +1005,9 @@
       "伞草花"
     ],
     "meaning": "坚韧与清新",
-    "season": "夏"
+    "season": "夏",
+    "pinyin": "hansancaohua",
+    "pinyinInitials": "hsch"
   },
   {
     "name": "天人菊",
@@ -797,6 +1015,8 @@
       "天人菊"
     ],
     "meaning": "乐观与坚强",
-    "season": "夏秋"
+    "season": "夏秋",
+    "pinyin": "tianrenju",
+    "pinyinInitials": "trj"
   }
 ]
