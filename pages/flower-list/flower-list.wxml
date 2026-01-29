@@ -20,7 +20,55 @@
       />
     </view>
     <button class="meta-controls__reset secondary" type="default" bindtap="onClearSearch">清除搜索</button>
-    <text class="meta-controls__help">支持搜索花名、别名、花语、季节、常见度与组别。</text>
+    <text class="meta-controls__help">支持搜索花名、别名、花语、季节、常见度与组别，也支持拼音/首字母。</text>
+
+    <view class="quick-filters">
+      <text class="quick-filters__label">快捷筛选：</text>
+      <view class="quick-filters__list">
+        <button
+          class="quick-filters__chip {{seasonFilter === '春' ? 'active' : ''}}"
+          data-season="春"
+          size="mini"
+          bindtap="onQuickSeason"
+        >春季</button>
+        <button
+          class="quick-filters__chip {{seasonFilter === '夏' ? 'active' : ''}}"
+          data-season="夏"
+          size="mini"
+          bindtap="onQuickSeason"
+        >夏季</button>
+        <button
+          class="quick-filters__chip {{seasonFilter === '秋' ? 'active' : ''}}"
+          data-season="秋"
+          size="mini"
+          bindtap="onQuickSeason"
+        >秋季</button>
+        <button
+          class="quick-filters__chip {{seasonFilter === '冬' ? 'active' : ''}}"
+          data-season="冬"
+          size="mini"
+          bindtap="onQuickSeason"
+        >冬季</button>
+        <button
+          class="quick-filters__chip {{onlyFilled ? 'active' : ''}}"
+          data-toggle="filled"
+          size="mini"
+          bindtap="onQuickToggle"
+        >已补充</button>
+        <button
+          class="quick-filters__chip {{meaningOnly ? 'active' : ''}}"
+          data-toggle="meaning"
+          size="mini"
+          bindtap="onQuickToggle"
+        >有花语</button>
+        <button
+          class="quick-filters__chip {{aliasOnly ? 'active' : ''}}"
+          data-toggle="alias"
+          size="mini"
+          bindtap="onQuickToggle"
+        >有别名</button>
+      </view>
+    </view>
 
     <view class="meta-controls__field">
       <text class="meta-controls__label">分组：</text>

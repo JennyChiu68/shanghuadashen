@@ -3,6 +3,8 @@
   display: flex;
   flex-direction: column;
   gap: 24rpx;
+  background: #f3f6fb;
+  min-height: 100vh;
 }
 
 .detail__image {
@@ -31,6 +33,10 @@
   display: flex;
   flex-direction: column;
   gap: 12rpx;
+  background: #ffffff;
+  border-radius: 20rpx;
+  padding: 20rpx;
+  box-shadow: 0 8rpx 24rpx rgba(31, 42, 61, 0.06);
 }
 
 .detail__title {

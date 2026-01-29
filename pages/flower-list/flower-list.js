@@ -21,6 +21,7 @@ Page({
     aliasOnly: false,
     meaningOnly: false,
     seasonOnly: false,
+    seasonFilter: 'all',
     groupOptions: ['全部'],
     groupValues: ['all'],
     groupIndex: 0,
@@ -56,11 +57,16 @@ Page({
     });
     return flowers.map((flower) => {
       const meta = metaMap.get(flower.name) || {};
+      const alias = meta.alias || [];
+      const meaning = meta.meaning || '';
+      const season = meta.season || '';
       return {
         ...flower,
-        alias: meta.alias || [],
-        meaning: meta.meaning || '',
-        season: meta.season || '',
+        alias,
+        meaning,
+        season,
+        pinyin: meta.pinyin || '',
+        pinyinInitials: meta.pinyinInitials || '',
       };
     });
   },
@@ -103,6 +109,7 @@ Page({
       .filter((flower) => (!this.data.aliasOnly || (flower.alias || []).length > 0))
       .filter((flower) => (!this.data.meaningOnly || (flower.meaning || '').trim() !== ''))
       .filter((flower) => (!this.data.seasonOnly || (flower.season || '').trim() !== ''))
+      .filter((flower) => this.matchesSeasonFilter(flower, this.data.seasonFilter))
       .filter((flower) => this.matchesKeyword(flower, keyword));
 
     const groups = this.groupAndDecorate(filteredFlowers, keyword, order);
@@ -117,17 +124,31 @@ Page({
     this.saveFilters();
   },
   matchesKeyword(flower, keyword) {
-    if (!keyword) {
+    const normalizedKeyword = this.normalizeSearchTerm(keyword);
+    if (!normalizedKeyword) {
       return true;
     }
-    const nameMatch = (flower.name || '').includes(keyword);
-    const aliasMatch = Array.isArray(flower.alias)
-      && flower.alias.some((alias) => (alias || '').includes(keyword));
-    const meaningMatch = (flower.meaning || '').includes(keyword);
-    const seasonMatch = (flower.season || '').includes(keyword);
-    const tierMatch = (flower.tier || '').includes(keyword);
-    const groupMatch = String(flower.group || '').includes(keyword);
-    return nameMatch || aliasMatch || meaningMatch || seasonMatch || tierMatch || groupMatch;
+    const tokens = [
+      flower.name,
+      flower.meaning,
+      flower.season,
+      flower.tier,
+      String(flower.group || ''),
+      flower.pinyin,
+      flower.pinyinInitials,
+      ...(flower.alias || []),
+    ];
+    return tokens.some((token) => this.normalizeSearchTerm(token).includes(normalizedKeyword));
+  },
+  normalizeSearchTerm(value) {
+    return String(value || '').toLowerCase().replace(/\s+/g, '');
+  },
+  matchesSeasonFilter(flower, seasonFilter) {
+    if (!seasonFilter || seasonFilter === 'all') {
+      return true;
+    }
+    const seasonText = (flower.season || '').trim();
+    return seasonText.includes(seasonFilter);
   },
   groupAndDecorate(flowers, keyword, order) {
     const grouped = new Map();
@@ -231,6 +252,9 @@ Page({
     if (this.data.seasonOnly) {
       parts.push('含季节');
     }
+    if (this.data.seasonFilter !== 'all') {
+      parts.push(`季节含“${this.data.seasonFilter}”`);
+    }
     if (order === 'name') {
       parts.push('按花名排序');
     } else if (order === 'filled') {
@@ -281,6 +305,30 @@ Page({
     this.setData({ seasonOnly: event.detail.value });
     this.applyFilters();
   },
+  onQuickSeason(event) {
+    const season = event.currentTarget.dataset.season;
+    if (!season) {
+      return;
+    }
+    const next = this.data.seasonFilter === season ? 'all' : season;
+    this.setData({ seasonFilter: next });
+    this.applyFilters();
+  },
+  onQuickToggle(event) {
+    const key = event.currentTarget.dataset.toggle;
+    const mapping = {
+      filled: 'onlyFilled',
+      meaning: 'meaningOnly',
+      alias: 'aliasOnly',
+      season: 'seasonOnly',
+    };
+    const stateKey = mapping[key];
+    if (!stateKey) {
+      return;
+    }
+    this.setData({ [stateKey]: !this.data[stateKey] });
+    this.applyFilters();
+  },
   onResetFilters() {
     this.setData({
       keyword: '',
@@ -288,6 +336,7 @@ Page({
       aliasOnly: false,
       meaningOnly: false,
       seasonOnly: false,
+      seasonFilter: 'all',
       groupIndex: 0,
       tierIndex: 0,
       sortIndex: 0,
@@ -305,6 +354,7 @@ Page({
       aliasOnly: this.data.aliasOnly,
       meaningOnly: this.data.meaningOnly,
       seasonOnly: this.data.seasonOnly,
+      seasonFilter: this.data.seasonFilter,
       groupIndex: this.data.groupIndex,
       tierIndex: this.data.tierIndex,
       sortIndex: this.data.sortIndex,
@@ -322,6 +372,7 @@ Page({
       aliasOnly: Boolean(stored.aliasOnly),
       meaningOnly: Boolean(stored.meaningOnly),
       seasonOnly: Boolean(stored.seasonOnly),
+      seasonFilter: stored.seasonFilter || 'all',
       groupIndex: stored.groupIndex || 0,
       tierIndex: stored.tierIndex || 0,
       sortIndex: stored.sortIndex || 0,

@@ -24,6 +24,18 @@
     <text class="detail__label">季节</text>
     <text class="detail__value">{{seasonText}}</text>
   </view>
+  <view class="detail__section">
+    <text class="detail__label">观赏提示</text>
+    <text class="detail__value">{{seasonHint}}</text>
+  </view>
+  <view class="detail__section">
+    <text class="detail__label">检索拼音</text>
+    <text class="detail__value">{{pinyinText}}</text>
+  </view>
+  <view class="detail__section">
+    <text class="detail__label">拼音首字母</text>
+    <text class="detail__value">{{initialsText}}</text>
+  </view>
 </view>
 
 <view class="detail__empty" wx:if="{{!flower}}">
